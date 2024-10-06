@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #f2f2f2, #cfcfcf);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centered and Modern Navigation Styles */
+nav {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  padding: 10px 20px; 
+  color: #444;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li:hover {
+  background-color: #fff; 
+  transform: scale(1.1); 
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row; 
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.right-side,
+.left-side {
+  flex: 1; 
+}
+
+.hero-img {
+  width: 100%; 
+  max-width: 600px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 835px) {
+  .page-section{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    display: none;
+  }
+}
+
+.left-side p {
+  padding: 10px 0;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+#search-bar {
+  padding: 15px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 15px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#search-button:hover {
+  background-color: #e65a5a;
+}
+
+/* Recipe Results */
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.recipes .recipe-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipes .recipe-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}

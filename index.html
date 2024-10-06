@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li id="home-link">Home</li>
+      <li id="favorites-link">Favorites</li>
+    </ul>
+  </nav>
+
+  <!-- Home Page Section -->
+  <section id="page-section" class="page-section">
+    <div class="left-side">
+      <h2>Discover Your Next Dinner</h2>
+      <p>Search for recipes by ingredients. Discover new delicious meals that cater to your palate.</p>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a recipe...">
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+    <div class="right-side">
+      <img class="hero-img" src="beef-taco-recipe-2.jpg" alt="Beef Taco">
+    </div>
+  </section>
+
+  <!-- Recipe Results -->
+  <section id="recipe-results" class="recipes hidden">
+    <!-- Recipe results will be displayed here -->
+  </section>
+
+  <!-- Favorites Page Section -->
+  <section id="favorites-page" class="favorites hidden">
+    <h2>Your Favorite Recipes</h2>
+    <div id="favorites-results"></div>
+    </button>
+  </section>
+</body>
+</html>
